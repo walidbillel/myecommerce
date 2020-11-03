@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import data from './data.js';
 import { Route, BrowserRouter, Link } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';

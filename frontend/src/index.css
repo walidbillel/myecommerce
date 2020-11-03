@@ -74,10 +74,11 @@ a {
 .products li {
   list-style-type: none;
   padding: 0;
+  text-align: center;
   flex: 0 1 25rem;
   margin: 3rem;
   height: 30rem;
-  border-bottom: 0.1rem rgb(3, 131, 14) solid;
+  border-bottom: 0.1rem rgb(239, 241, 239) solid;
 }
 
 .product {
@@ -91,6 +92,14 @@ a {
   width: 20rem;
   height: 20rem;
   object-fit: contain;
+  box-shadow: 0 0.3rem 0.3rem 0 #aaaaaa;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.product-image:hover {
+  box-shadow: 0 0.4rem 0.4rem 0 #aaaaaa;
+  transform: scale(1.01);
 }
 
 .product-name {
@@ -173,4 +182,65 @@ a {
 
 .sidebar-close-button:hover {
   opacity: 1;
+}
+
+/* Product details */
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.details-image {
+  flex: 2 1 25rem;
+}
+.details-image img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+}
+.details-info {
+  flex: 1 1 20rem;
+}
+.details-actions {
+  flex: 1 1 20rem;
+}
+
+.details-info ul,
+.details-actions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-info li,
+.details-actions li {
+  margin-bottom: 0.5rem;
+}
+
+.back-to-result {
+  padding: 1rem;
+}
+
+.details-actions {
+  box-shadow: 0 0.3rem 0.3rem 0 #aaaaaa;
+  padding: 1rem;
+}
+
+.details-actions ul li:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(206, 206, 10);
+  border: none;
+}
+
+.button:hover {
+  background-color: tomato;
 }
