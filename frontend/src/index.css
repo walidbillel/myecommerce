@@ -27,7 +27,7 @@ a {
 
 .header {
   grid-area: header;
-  padding: 1rem;
+  padding: 0.9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
